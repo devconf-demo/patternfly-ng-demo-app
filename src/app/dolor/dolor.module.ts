@@ -4,12 +4,15 @@ import { NgModule } from '@angular/core';
 
 import { RouterModule } from '@angular/router';
 import { DolorComponent } from './dolor.component';
+import { ActionModule, ListModule } from 'patternfly-ng';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    ListModule,
+    ActionModule
   ],
   declarations: [DolorComponent],
   exports: [DolorComponent],

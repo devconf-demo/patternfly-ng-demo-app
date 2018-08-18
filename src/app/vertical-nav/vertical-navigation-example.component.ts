@@ -27,7 +27,17 @@ export class VerticalNavigationExampleComponent implements OnInit {
       {
         title: 'Ipsum',
         iconStyleClass: 'fa fa-dashboard',
-        url: '/',
+        url: '/'
+      },
+      {
+        title: 'Dolor',
+        iconStyleClass: 'fa fa-star',
+        url: '/dolor'
+      },
+      {
+        title: 'Amet',
+        iconStyleClass: 'fa fa-bell',
+        url: '/#/amet',
         children: [
           {
             title: 'Item 1-A',
@@ -42,16 +52,6 @@ export class VerticalNavigationExampleComponent implements OnInit {
         ]
       },
       {
-        title: 'Dolor',
-        iconStyleClass: 'fa fa-star',
-        url: '/dolor'
-      },
-      {
-        title: 'Amet',
-        iconStyleClass: 'fa fa-bell',
-        url: '/#/amet'
-      },
-      {
         title: 'Orbis',
         iconStyleClass: 'fa fa-shield',
         url: '/orbis'
@@ -61,8 +61,8 @@ export class VerticalNavigationExampleComponent implements OnInit {
 
   onItemClicked($event: VerticalNavigationItem): void {
     this.actionText += 'Item Clicked: ' + $event.title + '\n';
-    if ($event.title === 'Amet') {
-      window.location.assign('http://patternfly-react-demo-app-devconf-microspa.6923.rh-us-east-1.openshiftapps.com' + $event.url);
+    if ($event.title === 'Ipsum') {
+      window.location.assign('http://patternfly-react-demo-app-devconf-microspa.6923.rh-us-east-1.openshiftapps.com');
     }
   }
 
