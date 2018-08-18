@@ -49,7 +49,7 @@ export class VerticalNavigationExampleComponent implements OnInit {
       {
         title: 'Amet',
         iconStyleClass: 'fa fa-bell',
-        url: 'react/#/amet'
+        url: '/#/amet'
       },
       {
         title: 'Orbis',
@@ -62,7 +62,7 @@ export class VerticalNavigationExampleComponent implements OnInit {
   onItemClicked($event: VerticalNavigationItem): void {
     this.actionText += 'Item Clicked: ' + $event.title + '\n';
     if ($event.title === 'Amet') {
-      window.location.assign(window.location.origin + $event.url);
+      window.location.assign('http://patternfly-react-demo-app-devconf-microspa.6923.rh-us-east-1.openshiftapps.com' + $event.url);
     }
   }
 
