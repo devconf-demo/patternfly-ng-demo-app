@@ -1,10 +1,10 @@
 <pfng-vertical-navigation
-    [brandAlt]="'PatternFly Ng'"
+    [brandSrc]="'assets/brand.png'"
     [contentContainer]="contentContainer"
     [items]="navigationItems"
     [persistentSecondary]="false"
-    [pinnableMenus]="true"
-    [showBadges]="true"
+    [pinnableMenus]="false"
+    [showBadges]="false"
     [showIcons]="true"
     [updateActiveItemsOnClick]="true"
     (onItemClickEvent)="onItemClicked($event)"
@@ -18,7 +18,6 @@
       <li class="dropdown" dropdown>
         <a class="dropdown-toggle nav-item-iconic" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" dropdownToggle>
           <span title="Help" class="fa pficon-help"></span>
-          <span class="caret"></span>
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" *dropdownMenu>
           <li><a href="#">Help</a></li>
@@ -28,6 +27,7 @@
       <li class="dropdown" dropdown>
         <a class="dropdown-toggle nav-item-iconic" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" dropdownToggle>
           <span title="Username" class="fa pficon-user"></span>
+          <span class="dropdown-title">DevConf User</span>
           <span class="caret"></span>
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" *dropdownMenu>
@@ -39,18 +39,7 @@
   </div>
 </pfng-vertical-navigation>
 <div #contentContainer
-     class="container-fluid container-cards-pf container-pf-nav-pf-vertical example-page-container nav-pf-vertical-with-badges"
-     style="background-color: white;">
-  <div class="row">
-    <div class="col-sm-12">
-      <h4 class="actions-label">Actions</h4>
-      <hr/>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <textarea rows="3" class="col-sm-12">{{actionText}}</textarea>
-      <router-outlet></router-outlet>
-    </div>
-  </div>
+     class="container-pf-nav-pf-vertical container-fluid"
+     style="background-color: white;, margin-left: 200px; top: 60px; position: fixed;">
+    <router-outlet></router-outlet>
 </div>
