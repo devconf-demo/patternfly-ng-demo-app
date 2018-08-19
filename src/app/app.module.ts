@@ -13,7 +13,8 @@ const appRoutes: Routes = [
   {path: 'angular1', component: AppComponent},
   {path: '', component: DolorComponent},
   {path: 'dolor', component: DolorComponent},
-  {path: 'amet', component: AmetComponent}
+  {path: 'amet', component: AmetComponent},
+  {path: 'orbis', component: AmetComponent}
 ];
 
 @NgModule({

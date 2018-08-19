@@ -37,16 +37,16 @@ export class VerticalNavigationExampleComponent implements OnInit {
       {
         title: 'Amet',
         iconStyleClass: 'fa fa-bell',
-        url: '/#/amet',
+        url: '/amet',
         children: [
           {
             title: 'Item 1-A',
-            url: '/ipsum/item-1-a',
+            url: '/amet/item-1-a',
             iconStyleClass: 'fa fa-envelope-open'
           },
           {
             title: 'Item 1-B',
-            url: '/ipsum/item-1-a',
+            url: '/amet/item-1-a',
             iconStyleClass: 'fa fa-envelope-closed'
           }
         ]
